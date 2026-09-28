@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptGen AI - AI Prompt Generator</title>
+  <meta name="description" content="Create useful AI prompts for images, videos, YouTube Shorts, horror stories, gaming and product ads.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">PromptGen <span>AI</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#generator">Generator</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">AI CREATOR TOOLKIT</p>
+        <h1>Create Powerful AI Prompts in Seconds</h1>
+        <p class="subtitle">Choose a category, describe your idea, and get a ready-to-use prompt for your next creation.</p>
+        <a class="primary-btn" href="#generator">✨ Generate Prompt</a>
+      </div>
+    </section>
+
+    <section id="generator" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">PROMPT GENERATOR</p>
+        <h2>Turn your idea into a better prompt</h2>
+      </div>
+
+      <div class="generator-card">
+        <label for="idea">What do you want to create?</label>
+        <textarea id="idea" placeholder="Example: A scary abandoned house in a forest at night"></textarea>
+
+        <label for="category">Choose a category</label>
+        <select id="category">
+          <option value="image">🖼️ AI Image</option>
+          <option value="video">🎬 AI Video</option>
+          <option value="shorts">📱 YouTube Shorts</option>
+          <option value="horror">👻 Horror Story</option>
+          <option value="gaming">🎮 Gaming</option>
+          <option value="product">🛍️ Product Advertisement</option>
+          <option value="story">📖 Story</option>
+        </select>
+
+        <button id="generateBtn" class="primary-btn full">✨ Generate Prompt</button>
+
+        <div id="resultBox" class="result hidden">
+          <div class="result-top">
+            <h3>Your AI Prompt</h3>
+            <button id="copyBtn" class="small-btn">📋 Copy</button>
+          </div>
+          <p id="resultText"></p>
+          <button id="againBtn" class="secondary-btn">🔄 Generate Again</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section light">
+      <div class="section-heading">
+        <p class="eyebrow">CATEGORIES</p>
+        <h2>Choose Your Prompt Category</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">🎬</div><h3>AI Video</h3><p>Create cinematic video prompts.</p></article>
+        <article class="card"><div class="icon">🖼️</div><h3>AI Image</h3><p>Generate detailed image prompts.</p></article>
+        <article class="card"><div class="icon">👻</div><h3>Horror</h3><p>Create suspenseful story concepts.</p></article>
+        <article class="card"><div class="icon">📱</div><h3>YouTube Shorts</h3><p>Create short-form content prompts.</p></article>
+        <article class="card"><div class="icon">🎮</div><h3>Gaming</h3><p>Create gaming content ideas.</p></article>
+        <article class="card"><div class="icon">🛍️</div><h3>Product Ads</h3><p>Create advertising concepts.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT</p>
+        <h2>About PromptGen AI</h2>
+      </div>
+      <p>PromptGen AI helps creators turn simple ideas into useful AI prompts quickly. This starter version works without an API, so you can test the concept for free before adding an AI service later.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 PromptGen AI. Built for creators.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
